@@ -57,8 +57,7 @@ export const LOCALE_LABELS: LocaleItem[] = [
   { value: 'it-IT', label: 'Italiano' },
   { value: 'tr-TR', label: 'Türkçe' },
   { value: 'fr-FR', label: 'Français' },
-  { value: 'vi', label: 'Tiếng Việt' },
-  { value: 'vi-VN', label: 'Tiếng Việt (Việt Nam)' }
+  { value: 'vi-VN', label: 'Tiếng Việt' },
 ];
 
 // Sort language options into a consistent, user-friendly alphabetical order.
