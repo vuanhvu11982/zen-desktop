@@ -11,9 +11,10 @@ import jaJP from './locales/ja-JP.json';
 import kkKZ from './locales/kk-KZ.json';
 import ruRU from './locales/ru-RU.json';
 import trTR from './locales/tr-TR.json';
+import viVN from './locales/vi-VN.json';
 import zhCN from './locales/zh-CN.json';
 import zhTW from './locales/zh-TW.json';
-import viVN from './locales/vi-VN.json';
+
 export const SUPPORTED_LOCALES = [
   'en',
   'en-US',
@@ -116,8 +117,8 @@ export async function initI18n() {
       'tr-TR': { translation: trTR },
       fr: { translation: frFR },
       'fr-FR': { translation: frFR },
-      vi: { translation: viVN },
-     'vi-VN': { translation: viVN }
+       vi: { translation: viVN },
+      'vi-VN': { translation: viVN },
     },
     lng: locale,
     fallbackLng: FALLBACK_LOCALE,
