@@ -13,7 +13,7 @@ import ruRU from './locales/ru-RU.json';
 import trTR from './locales/tr-TR.json';
 import zhCN from './locales/zh-CN.json';
 import zhTW from './locales/zh-TW.json';
-
+import viVN from './locales/vi-VN.json';
 export const SUPPORTED_LOCALES = [
   'en',
   'en-US',
@@ -34,6 +34,8 @@ export const SUPPORTED_LOCALES = [
   'ja-JP',
   'fr',
   'fr-FR',
+  'vi',
+  'vi-VN',
 ] as const;
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 export const FALLBACK_LOCALE: SupportedLocale = 'en-US';
@@ -54,6 +56,8 @@ export const LOCALE_LABELS: LocaleItem[] = [
   { value: 'it-IT', label: 'Italiano' },
   { value: 'tr-TR', label: 'Türkçe' },
   { value: 'fr-FR', label: 'Français' },
+  { value: 'vi', label: 'Tiếng Việt' },
+  { value: 'vi-VN', label: 'Tiếng Việt (Việt Nam)' }
 ];
 
 // Sort language options into a consistent, user-friendly alphabetical order.
@@ -112,6 +116,8 @@ export async function initI18n() {
       'tr-TR': { translation: trTR },
       fr: { translation: frFR },
       'fr-FR': { translation: frFR },
+      vi: { translation: viVN },
+     'vi-VN': { translation: viVN }
     },
     lng: locale,
     fallbackLng: FALLBACK_LOCALE,
